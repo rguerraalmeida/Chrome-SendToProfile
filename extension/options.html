@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Send To Profile Options</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 24px; max-width: 700px; }
+      label { display: block; margin-top: 16px; font-weight: 600; }
+      input[type="text"] { width: 100%; padding: 8px; margin-top: 8px; }
+      .hint { color: #555; font-size: 0.9rem; }
+      .status { margin-top: 16px; font-weight: 600; }
+      button { margin-top: 16px; padding: 8px 16px; }
+    </style>
+  </head>
+  <body>
+    <h1>Send To Profile</h1>
+    <p>Configure the target Chrome profile directory used by the native host.</p>
+
+    <label for="profileDirectory">Profile directory</label>
+    <input id="profileDirectory" type="text" placeholder="Profile 1" />
+    <p class="hint">Examples: <code>Default</code>, <code>Profile 1</code>, <code>Profile 2</code>.</p>
+
+    <label>
+      <input id="closeOriginalTab" type="checkbox" />
+      Close current tab after successful send
+    </label>
+
+    <button id="saveButton" type="button">Save</button>
+    <p class="status" id="status"></p>
+
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Send To Profile",
+  "version": "0.1.0",
+  "description": "Send the current tab URL to a configured Chrome profile via Native Messaging.",
+  "permissions": ["activeTab", "tabs", "storage", "nativeMessaging", "notifications"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Send this tab to another profile"
+  },
+  "options_page": "options.html"
+}
